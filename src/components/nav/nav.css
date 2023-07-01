@@ -1,0 +1,9 @@
+
+.nav-item-cus {
+    font-weight: bold;
+    font-size: 1.04rem;
+}
+
+.nav-item-cus:hover {
+    color: var(--primary) !important;
+}

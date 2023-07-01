@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './components/nav';
 
 function App() {
   return (
     <div className="App">
-      <h1>Starts </h1>
-      <button class= "btn btn-success ">this</button>
+      <Nav natItems = {["home", "about", "skills", "experience", "education", "contact"]} ></Nav>
     </div>
   );
 }
