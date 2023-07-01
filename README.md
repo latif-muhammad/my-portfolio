@@ -1,6 +1,6 @@
-# My Portfolio Site
+# Portfolio Website
 
-This is a my portfolio webite built with React and Bootstrap. It showcases your projects, skills, and experience in an organized and visually appealing manner.
+Welcome to my portfolio website! This website showcases my skills, projects, and achievements, providing an overview of my professional profile.
 
 ## Features
 
@@ -10,17 +10,13 @@ This is a my portfolio webite built with React and Bootstrap. It showcases your 
 - Experience section to showcase your work experience and education history.
 - Contact section to provide visitors with a way to get in touch with you.
 
-## Getting Started
+## Technologies Used
+   [![My Skills](https://skillicons.dev/icons?i=react,html,css,js,bootstrap)](https://skillicons.dev)7
+   
+## Author
 
-To get a local copy of the project up and running, follow these steps:
+- Your Name
+- GitHub: [GitHub Profile](https://github.com/latif-muhammad)
+- Portfolio Website: [Your Portfolio Website](https://latif-muhammad.me)
 
-### Prerequisites
-
-- Node.js and npm installed on your machine.
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/developer-portfolio.git
+#ps: It's not live yet, Need to add things
