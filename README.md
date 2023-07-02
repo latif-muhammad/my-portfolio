@@ -15,7 +15,7 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
    
 ## Author
 
-- Your Name
+- Muhammad Latif
 - GitHub: [GitHub Profile](https://github.com/latif-muhammad)
 - Portfolio Website: [Your Portfolio Website](https://latif-muhammad.me)
 
