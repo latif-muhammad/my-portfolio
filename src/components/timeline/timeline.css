@@ -1,0 +1,15 @@
+
+.seperator{
+    position: absolute;
+    height: 85%;
+    z-index: 3;
+    width: 100%;
+    
+}
+.timeline-details .dot{
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--primary)!important;
+    z-index: 10;
+}
