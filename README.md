@@ -12,7 +12,7 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 - Contact section to provide visitors with a way to get in touch with you.
 
 ## Technologies Used
-   [![My Skills](https://skillicons.dev/icons?i=react,html,css,js,bootstrap)](https://skillicons.dev)
+   [![My Skills](https://skillicons.dev/icons?i=html,css,bootstrapjs,react)](https://skillicons.dev)
    
 ## Author
 
