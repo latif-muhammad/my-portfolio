@@ -1,6 +1,4 @@
 import './App.css';
-import Nav from './components/nav/nav';
-import TimeLine from './components/timeline/timeLine';
 
 
 function App() {
