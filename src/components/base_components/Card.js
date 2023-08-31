@@ -1,9 +1,11 @@
-
-const Card = (props)=>  {
+import styles from "./Card.module.css"
+const Card = (props) => {
     return (
-        <div className="card">
-            <div className="card-body">
-                { props.children}
+        <div className={`card ${styles.cardBackground} ${styles.borderRadius}`} >
+            <div className={`${styles.overlayContainer}`}>
+                <div className= { "card-body" }>
+                    {props.children}
+                </div>
             </div>
         </div>
     );
