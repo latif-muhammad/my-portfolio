@@ -1,6 +1,6 @@
 import './App.css';
-import Card from './components/base_components/Card';
-import Navbar from './components/Navbar';
+import Card from './components/base/Card';
+import Navbar from './components/core/Navbar';
 
 
 
