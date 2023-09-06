@@ -1,0 +1,32 @@
+/* timeline me  starts*/
+.separator{
+    position: absolute;
+    height: 85%;
+    z-index: 3;
+    width: 100%;
+    
+}
+
+.dot{
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    background-color:red!important;
+    z-index: 10;
+}
+
+@media (max-width: 576px) { 
+	.section-margin {
+		margin-bottom: 4rem !important;
+	}
+
+	/* timeline */
+	.timeline-details{
+		padding-left: 4rem!important;
+	}
+
+	.dot{
+		left: 0.92rem!important;
+	}
+
+}

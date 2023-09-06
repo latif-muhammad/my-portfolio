@@ -1,7 +1,7 @@
 import './App.css';
 import Card from './components/base/Card';
 import Navbar from './components/core/Navbar';
-
+import Timeline from './components/core/Timeline';
 
 
 function App() {
@@ -17,22 +17,8 @@ function App() {
           <p>this is not the world we had in mind but we got time. </p>
           
         </Card>
-
-        <Card>
-          <h1>this is inside the card</h1>
-          <p>this is not the world we had in mind but we got time. </p>
-
-          <p>this is not the world we had in mind but we got time. </p>
-          
-        </Card>
-        <Card>
-          <h1>this is inside the card</h1>
-          <p>this is not the world we had in mind but we got time. </p>
-
-          <p>this is not the world we had in mind but we got time. </p>
-          
-        </Card>
       </div>
+      <Timeline></Timeline>
     </div>
   );
 }
