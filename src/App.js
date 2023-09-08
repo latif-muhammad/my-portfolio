@@ -4,6 +4,7 @@ import Navbar from './components/core/Navbar';
 import Timeline from './components/core/Timeline';
 import * as data from "./utilities/data";
 import SocialButton from "./components/core/Social_button";
+import ContactForm from './components/UI/Contact_Form';
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,9 @@ function App() {
 
       <Timeline timelineData={data.timelineData}></Timeline>
 
+
       <SocialButton icon = "fa fa-facebook"></SocialButton>
+      <ContactForm></ContactForm>
     </div>
   );
 }
