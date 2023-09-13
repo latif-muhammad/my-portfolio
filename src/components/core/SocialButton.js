@@ -1,4 +1,4 @@
-import styles from "../core/Social_button.module.css"
+import styles from "../core/SocialButton.module.css"
 const SocialButton = (props) => {
     return (
 

@@ -3,8 +3,8 @@ import Card from './components/base/Card';
 import Navbar from './components/core/Navbar';
 import Timeline from './components/core/Timeline';
 import * as data from "./utilities/data";
-import SocialButton from "./components/core/Social_button";
-import ContactForm from './components/UI/Contact_Form';
+import SocialButton from "./components/core/SocialButton";
+import ContactForm from './components/UI/ContactForm';
 function App() {
   return (
     <div className="App">

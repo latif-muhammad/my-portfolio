@@ -1,4 +1,4 @@
-import styles from "./Timeline_detail.module.css";
+import styles from "./TimelineDetail.module.css";
 
 const TimeLineDetail = (props) => {
     return (
