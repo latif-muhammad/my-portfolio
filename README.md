@@ -6,10 +6,10 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 ## Features
 
 - Responsive design using Bootstrap for a seamless user experience across different devices.
-- Project section to showcase your work with details such as project name, description, and technologies used.
-- Skills section to highlight your technical skills and expertise.
-- Experience section to showcase your work experience and education history.
-- Contact section to provide visitors with a way to get in touch with you.
+- Project section to showcase my work with details such as project name, description, and technologies used.
+- Skills section to highlight my technical skills and expertise.
+- Experience section to showcase my work experience and education history.
+- Contact section to provide visitors with a way to get in touch with me.
 
 ## Technologies Used
    [![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js,react)](https://skillicons.dev)
