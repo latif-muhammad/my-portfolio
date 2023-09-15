@@ -1,6 +1,6 @@
 
 .header {
     background: url(../assets/back.jpg);
-    background-repeat: fixed;
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
