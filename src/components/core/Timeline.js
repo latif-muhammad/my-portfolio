@@ -16,7 +16,7 @@ const TimeLine = (props) => {
             <div className="row body">
                 {
                     props.timelineData.map((data) => (
-                        <TimeLineDetail data={data}></TimeLineDetail>))
+                        <TimeLineDetail key = { data.id } data={data}></TimeLineDetail>))
                 }
             </div>
 

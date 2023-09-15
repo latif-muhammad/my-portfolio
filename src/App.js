@@ -5,11 +5,12 @@ import Timeline from './components/core/Timeline';
 import * as data from "./utilities/data";
 import SocialButton from "./components/core/SocialButton";
 import ContactForm from './components/UI/ContactForm';
+import HomeScreen from './screens/HomeScreen';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <div className="container d-flex justify-content-around">
+      {/* <Navbar></Navbar> */}
+      {/* <div className="container d-flex justify-content-around">
 
         <Card>
           <h1>this is inside the card</h1>
@@ -20,9 +21,9 @@ function App() {
         </Card>
       </div>
 
-      <Timeline timelineData={data.timelineData}></Timeline>
+      <Timeline timelineData={data.timelineData}></Timeline> */}
 
-
+      <HomeScreen></HomeScreen>
       <SocialButton icon = "fa fa-facebook"></SocialButton>
       <ContactForm></ContactForm>
     </div>
