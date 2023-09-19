@@ -1,4 +1,3 @@
-
 import Navbar from '../components/core/Navbar';
 import * as data from "../utilities/data";
 import styles from "./HomeScreen.module.css";
