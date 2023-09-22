@@ -4,8 +4,8 @@ const TimeLine = (props) => {
     return (
         <section id="timeline" className="container section-margin position-relative">
             <div className="title mb-5 pb-3">
-                <h2 className="text-center mb-3">TimeLine</h2>
-                <hr style={{ width: "6%" }} class="text-center mx-auto m-0" />
+                <h2 className="text-center mb-2">TimeLine</h2>
+                <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
             </div>
 
             <div className={`row container ${styles.separator} `}>

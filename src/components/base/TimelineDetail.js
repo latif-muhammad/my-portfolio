@@ -11,7 +11,7 @@ const TimeLineDetail = (props) => {
                 <h5 className="mb-2 pe-3">{props.data.title}</h5>
                 <span className="mb-0 align-bottom" >{props.data.year}</span>
             </div>
-            <hr style={{ width: "10%", height: "0.05rem" }} class="mt-0 mb-3 p-0" />
+            <hr style={{ width: "10%", height: "0.05rem" }} className="mt-0 mb-3 p-0" />
             <p className="text-start">{props.data.detail}</p>
         </div>
     );
