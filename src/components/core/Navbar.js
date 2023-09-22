@@ -1,6 +1,6 @@
 const Navbar = (props) => {
     return (
-        <nav className={"navbar navbar-expand-lg navbar-light bg-light"}>
+        <nav className={`navbar navbar-expand-lg navbar-dark ${window.scrollY > 150 ? "bg-dark" : "bg-transparent"}`}>
             <div className={"container"}>
                 <a className={"navbar-brand"} href="#">Navbar</a>
                 <button className={"navbar-toggler"} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +10,7 @@ const Navbar = (props) => {
                     <ul className={"navbar-nav ms-auto"}>
                         {
                             props.data.map((item) => (
-                                <li key= { item.id } className={"nav-item"}>
+                                <li key={item.id} className={"nav-item"}>
                                     <a className={"nav-link"} href="#">{item.title} </a>
                                 </li>
                             )
