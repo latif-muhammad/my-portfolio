@@ -1,6 +1,7 @@
 import Navbar from '../components/core/Navbar';
-import * as data from "../utilities/data";
 import styles from "./HomeScreen.module.css";
+import Timeline from '../components/core/Timeline';
+import * as data from "../utilities/data";
 
 const HomeScreen = () => {
     return (
@@ -17,7 +18,7 @@ const HomeScreen = () => {
             <section id="About" className="container section-margin">
                 <div className="row">
                     <div id="ab-img" className="d-none d-md-block col-md-6 me-5">
-                        <img src={require("../assets/abImg.png")} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
+                        <img src={require ('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
                     </div>
                     <div className="col-md-5">
                         <div className="mb-4 about-me">
@@ -27,10 +28,19 @@ const HomeScreen = () => {
                             </div>
                             <p>Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
                         </div>
+
+                        <div class="tech-skills">
+                            <div class="title mb-4">
+                                <h4>Technical Skills</h4>
+                                <hr class="m-0"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section className="timelineSection"></section>
+            <section className="section-margin timelineSection">
+                <Timeline timelineData={data.timelineData}></Timeline>
+            </section>
             <section className="projects"></section>
             <section className="contactSections"></section>
 
