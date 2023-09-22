@@ -7,7 +7,13 @@ body {
   color: white;
 }
 /* constants */
-
+hr {
+  width: 13%;
+  background-color: var(--primary);
+  height: 0.13rem;
+  border: 0;
+  text-decoration: none;
+}
 :root {
   --light-mode: #edf1f5;
   --dark-mode: #100E17;
