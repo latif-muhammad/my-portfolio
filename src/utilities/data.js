@@ -1,22 +1,30 @@
 export const timelineData = [
     {
-        id: 0,
+        id: 3,
         title: "IBA Karachi",
-        year: "2020 - 2025",
+        year: "2021 - 2025",
+        detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
+
+    },
+
+    {
+        id: 2,
+        title: "Uconnect Technologies, ",
+        year: "2015 - 2020",
         detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
 
     },
     {
         id: 1,
         title: "AKHSS, Gilgit",
-        year: "2020 - 2025",
+        year: "2015 - 2020",
         detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
 
     },
     {
-        id: 2,
+        id: 0,
         title: "First line of code",
-        year: "2020 - 2025",
+        year: "2018",
         detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
 
     },

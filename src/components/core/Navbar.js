@@ -5,7 +5,7 @@ const Navbar = (props) => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 100) { 
+            if (window.scrollY > 200) { 
                 setBgColor('bg-dark'); 
             } else {
                 setBgColor('bg-transparent');
@@ -17,9 +17,9 @@ const Navbar = (props) => {
         };
     }, []);
     return (
-        <nav className={`navbar navbar-expand-lg  fixed-top navbar-dark py-3 ${bgColor}`}>
+        <nav className={`navbar navbar-expand-lg transition fixed-top navbar-dark py-3 ${bgColor}`}>
             <div className={"container"}>
-                <a className={"navbar-brand"} href="#">Navbar</a>
+                <a className={"navbar-brand"} href="#"></a>
                 <button className={"navbar-toggler"} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className={"navbar-toggler-icon"}></span>
                 </button>

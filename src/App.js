@@ -5,8 +5,6 @@ function App() {
   return (
     <div className="App">
       <HomeScreen></HomeScreen>
-      {/* <SocialButton icon = "fa fa-facebook"></SocialButton>
-      <ContactForm></ContactForm> */}
     </div>
   );
 }

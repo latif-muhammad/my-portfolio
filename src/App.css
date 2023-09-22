@@ -14,9 +14,10 @@ hr {
   border: 0;
   text-decoration: none;
 }
+/* 040615 */
 :root {
   --light-mode: #edf1f5;
-  --dark-mode: #100E17;
+  --dark-mode:#040615;
   --primary: #03b97d;
   --primary-darken: #029c66;
   --primary-back: #1E1E24;
@@ -29,4 +30,14 @@ hr {
 
 .section-margin {
   margin-bottom: 4rem !important;
+}
+
+.transition {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
