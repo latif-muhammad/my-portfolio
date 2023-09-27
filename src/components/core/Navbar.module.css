@@ -1,0 +1,8 @@
+.link {
+    font-size: 14px!important;
+    font-weight: 600!important;
+}
+
+.link:hover{
+    color: var(--primary)!important;
+}

@@ -2,10 +2,12 @@ body {
   margin: 0;
   font-weight: 400;
   background-color: var(--dark-mode);
-  letter-spacing: 1.6px !important;
+  letter-spacing: 0.03rem !important;
   line-height: 1.5;
-  color: white;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
+
 /* constants */
 hr {
   width: 13%;
@@ -14,14 +16,18 @@ hr {
   border: 0;
   text-decoration: none;
 }
+
 /* 040615 */
 :root {
-  --light-mode: #edf1f5;
-  --dark-mode:#040615;
-  --primary: #03b97d;
-  --primary-darken: #029c66;
-  --primary-back: #1E1E24;
-  --spare: #ff6900;
+  --primary-light-back: #ffffff;
+  --secondary-light-back: #f4f6fb;
+  --primary-dark-mode: #03131a;
+
+  --primary: #E54B4B;
+  --secondary: #e54b4b;
+  --primary-text: #1c2f50;
+  --secondary-text: #979797;
+
 }
 
 .overlay {
@@ -29,7 +35,7 @@ hr {
 }
 
 .section-margin {
-  margin-bottom: 4rem !important;
+  margin-bottom: 4.5rem !important;
 }
 
 .transition {
@@ -41,3 +47,18 @@ hr {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* "Roboto",sans-serif
+back => rgba(37,88,171,.05)
+rgba(37,88,171,.05)
+
+==> blure sort = > #2fb4ae !important
+
+prange = > FF7F51
+
+ref links = > https://themesdesign.in/harold/layout/index.html
+
+link2 = > https://shreethemes.in/cristino/layouts/index.html 
+time line good in second
+
+*/

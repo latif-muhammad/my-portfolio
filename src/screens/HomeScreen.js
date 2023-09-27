@@ -4,22 +4,31 @@ import Timeline from '../components/core/Timeline';
 import * as data from "../utilities/data";
 import ContactForm from "../components/UI/ContactForm";
 import SocialButton from "../components/core/SocialButton";
-
+import ProjectsCard from "../components/base/ProjectsCard"
 
 const HomeScreen = () => {
     const icons = ["fa fa-facebook", "fa fa-twitter", "fa fa-linkedin", "fa fa-github"];
     return (
         <div>
-            <section className={`section-margin header ${styles.header}`}>
-                <div className="overlay">
-                    <Navbar data={data.navData}></Navbar>
-                    <div className="intro text-white vh-100 d-flex container align-items-center justify-content-center flex-column">
-                        <h1 className="mb-4 fw-bold">I am Muhammad Latif</h1>
-                        <h3 className="fw-bold ">WEB /Mobile App developer</h3>
+            <section className={`section-margin header bg-light`}>
+                <Navbar data={data.navData}></Navbar>
+                <div className="container px-5">
+                    <div className="row" style={{ height: '83vh' }}>
+                        <div className="col intro d-flex container center justify-content-center flex-column ">
+                            <h5 class="sub-title fw-bold fs-2">Hello !</h5>
+                            <h1 class="heading mb-3" style={{ color : 'var(--primary)'}}>I'm Muhammad Latif</h1>
+                            <p class="para-desc text-muted fs-5">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                        </div>
+                        <div className="col intro text-white d-flex container center justify-content-center flex-column ">
+                            <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
+
+                        </div>
+
                     </div>
                 </div>
+
             </section>
-            <section id="About" className="container section-margin">
+            <section id="About" className="container section-margin bg-white">
                 <div className="row">
                     <div id="ab-img" className="d-none d-md-block col-md-6 me-5">
                         <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
@@ -45,7 +54,11 @@ const HomeScreen = () => {
             <section className="section-margin timelineSection">
                 <Timeline timelineData={data.timelineData}></Timeline>
             </section>
-            <section className="projects container section-margin"></section>
+            <section className="projects container section-margin d-flex justify-content-between justify-content-around">
+                <ProjectsCard></ProjectsCard>
+                <ProjectsCard></ProjectsCard>
+                <ProjectsCard></ProjectsCard>
+            </section>
 
             <section className="contactSections container section-margin">
                 <div className="row">
@@ -82,7 +95,7 @@ const HomeScreen = () => {
                             {
                                 icons.map((icon) => {
                                     var key = icons.indexOf(icon);
-                                    return <SocialButton key={ key } icon={icon}></SocialButton>
+                                    return <SocialButton key={key} icon={icon}></SocialButton>
                                 })
                             }
                         </div>
