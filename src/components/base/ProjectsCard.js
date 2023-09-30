@@ -1,7 +1,8 @@
+import styles from "../base/projectCard.module.css"
 const ProjectCard = (props) => {
     return (
-        <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
-            <div class="portfolio-box-img position-relative overflow-hidden d-flex" >
+        <div class={`item-box projects rounded transition bg-white overflow-hidden ${styles.projects}`}>
+            <div class="project-img position-relative overflow-hidden d-flex" >
                 <img class="item-container img-fluid mx-auto" src={require("../../assets/projects_images/Portfolio.jpg")} alt="1" height={'85%'} width={'85%'} />
                 <div class="overlay-work">
                     <div class="work-content text-center">
@@ -10,8 +11,8 @@ const ProjectCard = (props) => {
                 </div>
             </div>
             <div class="gallary-title py-4 text-center">
-                <h5><a href="page-portfolio-detail.html" class="title text-dark">props.title</a></h5>
-                <span>title.subHeading</span>
+                <h5 className=" text-dark text-uppercase">{ props.title } </h5>
+                <span className="badge bg-info px-3 py-2">sad</span>
             </div>
         </div>
     );

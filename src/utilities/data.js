@@ -30,7 +30,26 @@ export const timelineData = [
     },
 
 ];
-export const projects = [];
+export const projects = [
+    {
+        id: 0,
+        name: "portfolio Website",
+        languages: ["react", "bootstrap"],
+        link: "http://portfolio"
+    },
+    {
+        id: 1,
+        name: "Number plates recognition system",
+        languages: ["Django", "Bootstrap", "HTML 5", "CSS 3"],
+        link: "http://portfolio"
+    },
+    {
+        id: 2,
+        name: "Twitter Clone",
+        languages: ["Dart", "flutter"],
+        link: "http://portfolio"
+    }
+];
 
 export const navData = [
     {
@@ -42,7 +61,7 @@ export const navData = [
         id: 1,
         title: "About",
         link: "",
-    },    {
+    }, {
         id: 2,
         title: "Projects",
         link: "",

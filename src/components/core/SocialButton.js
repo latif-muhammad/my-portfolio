@@ -3,7 +3,7 @@ const SocialButton = (props) => {
     return (
 
         <div className= {`${styles.SocialButton} me-2`}>
-            <button className= {`${styles.SocialButton}`}><i className={`${props.icon} text-light ${styles.icon}`}></i></button>
+            <button className= {`${styles.SocialButton} transition`}><i className={`${props.icon} ${styles.icon}`}></i></button>
         </div>
     );
 }

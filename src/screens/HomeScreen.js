@@ -16,35 +16,31 @@ const HomeScreen = () => {
                         <div className="col intro d-flex container center justify-content-center flex-column ">
                             <h5 class="sub-title fw-bold fs-2">Hello !</h5>
                             <h1 class="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
-                            <p class="para-desc text-muted fs-5">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
+                            <p class="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
                         </div>
                         <div className="col intro text-white d-flex container center justify-content-center flex-column ">
                             <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
-
                         </div>
-
                     </div>
                 </div>
-
             </section>
+
             <section id="About" className="container section-margin bg-white">
                 <div className="row">
-                    <div id="ab-img" className="d-none d-md-block col-md-6 me-5">
-                        <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
+                    <div id="ab-img" className="d-none d-md-block col-md-5 me-5">
+                        <img src={require('../assets/about.jpg')} alt="Not Found" height="auto" width="90%" />
                     </div>
                     <div className="col-md-5">
-                        <div className="mb-4 about-me">
+                        <div className="mb-4 pt-5 about-me">
                             <div className="title mb-3">
                                 <h2 className="mb-2">ABOUT</h2>
                                 <hr className="m-0" />
                             </div>
-                            <p>Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
-                        </div>
+                            <p className="mb-5">Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
 
-                        <div className="tech-skills">
-                            <div className="title mb-4">
-                                <h4>Technical Skills</h4>
-                                <hr className="m-0" />
+                            <div className="flex">
+                                <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
+                                <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-danger px-3 py-2">View More</button>
                             </div>
                         </div>
                     </div>
@@ -68,19 +64,26 @@ const HomeScreen = () => {
                     <h2 className="text-center mb-2">PROJECTS</h2>
                     <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
                 </div>
-                <div className="row">
+                <div className="row mb-5">
+                    {
+                        data.projects.map((data) => (
+                            <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                                <ProjectsCard title = {data.name} ></ProjectsCard>
+                            </div>
+                        ))
+                    }
+                    {/* 
                     <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
                         <ProjectsCard></ProjectsCard>
                     </div>
                     <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
                         <ProjectsCard></ProjectsCard>
-                    </div>
-                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                        <ProjectsCard></ProjectsCard>
-                    </div>
+                    </div> */}
+
                 </div>
-                <div id="viewButton" class= "btn btn-success">
-                    <a href="https://github.com/latif-muhammad" className="text-light">view more</a>
+
+                <div className="d-flex justify-content-center ">
+                    <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2">View Work</button>
                 </div>
             </section>
 
@@ -125,18 +128,18 @@ const HomeScreen = () => {
                                 }
                             </div>
                         </div>
-                    
 
-                    <div className="title mb-5 mt-2 d-md-none">
-                        <h2 className="text-center mb-3">Contact From</h2>
-                        <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
+
+                        <div className="title mb-5 mt-2 d-md-none">
+                            <h2 className="text-center mb-3">Contact From</h2>
+                            <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
+                        </div>
+
+
+                        <div className="col-12 col-md-6">
+                            <ContactForm></ContactForm>
+                        </div>
                     </div>
-
-
-                    <div className="col-12 col-md-6">
-                        <ContactForm></ContactForm>
-                    </div>
-                </div>
                 </div>
             </section>
 
