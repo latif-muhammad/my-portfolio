@@ -16,6 +16,12 @@ hr {
   border: 0;
   text-decoration: none;
 }
+p{
+  font-size: 1.1rem;
+}
+a {
+  text-decoration: none;
+}
 
 /* 040615 */
 :root {
@@ -35,7 +41,10 @@ hr {
 }
 
 .section-margin {
-  margin-bottom: 4.5rem !important;
+  margin-bottom: 5rem !important;
+}
+.section-top-padding{
+  padding-top: 4rem!important;
 }
 
 .transition {

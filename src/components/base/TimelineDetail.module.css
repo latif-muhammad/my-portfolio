@@ -1,9 +1,10 @@
 .dot{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1rem;
+    width: 1rem;
     border-radius: 50%;
-    background-color: var(--primary	)!important;
+    background-color: var(--primary-light-back	)!important;
     z-index: 10;
+	border: 3px solid black;
 }
 
 @media (max-width: 576px) { 

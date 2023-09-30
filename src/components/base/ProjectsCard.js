@@ -1,10 +1,17 @@
-const ProjectCard = () => {
+const ProjectCard = (props) => {
     return (
-        <div className="card text-white mb-3" style={ { backgroundColor: "#F4F6FB", width: "30%"} }>
-            <div className="card-header">Header</div>
-            <div className="card-body">
-                <h5 className="card-title">Dark card title</h5>
-                <p className="card-text">Some quick thissi fasdfasdf adfa df a d f adf ad fas df adf ad f adf adf ad fad f af ad fad f af adf adf ad fa df adexample text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="item-box portfolio-box rounded shadow bg-white overflow-hidden">
+            <div class="portfolio-box-img position-relative overflow-hidden d-flex" >
+                <img class="item-container img-fluid mx-auto" src={require("../../assets/projects_images/Portfolio.jpg")} alt="1" height={'85%'} width={'85%'} />
+                <div class="overlay-work">
+                    <div class="work-content text-center">
+                        <a href="#" class="lightbox text-light work-icon bg-dark d-inline-block rounded-pill "><i data-feather="camera" class="fea icon-sm image-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallary-title py-4 text-center">
+                <h5><a href="page-portfolio-detail.html" class="title text-dark">props.title</a></h5>
+                <span>title.subHeading</span>
             </div>
         </div>
     );

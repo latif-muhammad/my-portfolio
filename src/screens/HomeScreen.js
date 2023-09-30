@@ -1,5 +1,4 @@
 import Navbar from '../components/core/Navbar';
-import styles from "./HomeScreen.module.css";
 import Timeline from '../components/core/Timeline';
 import * as data from "../utilities/data";
 import ContactForm from "../components/UI/ContactForm";
@@ -16,7 +15,7 @@ const HomeScreen = () => {
                     <div className="row" style={{ height: '83vh' }}>
                         <div className="col intro d-flex container center justify-content-center flex-column ">
                             <h5 class="sub-title fw-bold fs-2">Hello !</h5>
-                            <h1 class="heading mb-3" style={{ color : 'var(--primary)'}}>I'm Muhammad Latif</h1>
+                            <h1 class="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
                             <p class="para-desc text-muted fs-5">Obviously I'm a Web Designer. Web Developer with over 3 years of experience. Experienced with all stages of the development cycle for dynamic web projects.</p>
                         </div>
                         <div className="col intro text-white d-flex container center justify-content-center flex-column ">
@@ -51,55 +50,82 @@ const HomeScreen = () => {
                     </div>
                 </div>
             </section>
-            <section className="section-margin timelineSection">
-                <Timeline timelineData={data.timelineData}></Timeline>
-            </section>
-            <section className="projects container section-margin d-flex justify-content-between justify-content-around">
-                <ProjectsCard></ProjectsCard>
-                <ProjectsCard></ProjectsCard>
-                <ProjectsCard></ProjectsCard>
-            </section>
 
-            <section className="contactSections container section-margin">
-                <div className="row">
-                    <div className="title mb-0 mb-md-5">
-                        <h2 className="text-center mb-">Contact Me</h2>
+
+            <section className="section-margin timelineSection bg-light section-top-padding">
+                <div id="timeline" className="container section-margin position-relative">
+                    <div className="title mb-5 pb-3">
+                        <h2 className="text-center mb-2">TimeLine</h2>
                         <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
                     </div>
-
-                    <div className="col-12 col-md-6 pt-3 m-md-0 m-5">
-
-                        <div className="info-details mb-5">
-                            <div className="address d-flex mb-4">
-                                <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>
-                                <span>
-                                    <h5>Address</h5>
-                                    <p className="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                </span>
-                            </div>
-                            <div className="address d-flex">
-                                <i className="fa fa-phone align-bottom fs-3 me-4"></i>
-                                <span>
-                                    <h5>Phone Number</h5>
-                                    <p>+928751496357</p>
-                                </span>
-                            </div>
-                        </div>
+                    <Timeline timelineData={data.timelineData}></Timeline>
+                </div>
+            </section>
 
 
-                        <div className="title mb-5">
-                            <h5 className="mb-2">You can also contact me on</h5>
-                            <hr style={{ width: '10%' }} className="m-0" />
-                        </div>
-                        <div className="social-links d-flex">
-                            {
-                                icons.map((icon) => {
-                                    var key = icons.indexOf(icon);
-                                    return <SocialButton key={key} icon={icon}></SocialButton>
-                                })
-                            }
-                        </div>
+            <section className="projects container section-margin">
+                <div className="title mb-5 pb-3">
+                    <h2 className="text-center mb-2">PROJECTS</h2>
+                    <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
+                </div>
+                <div className="row">
+                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                        <ProjectsCard></ProjectsCard>
                     </div>
+                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                        <ProjectsCard></ProjectsCard>
+                    </div>
+                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                        <ProjectsCard></ProjectsCard>
+                    </div>
+                </div>
+                <div id="viewButton" class= "btn btn-success">
+                    <a href="https://github.com/latif-muhammad" className="text-light">view more</a>
+                </div>
+            </section>
+
+            <section className="contactSections section-margin bg-light section-top-padding">
+                <div className="container">
+                    <div className="row">
+                        <div className="title mb-0 mb-md-5">
+                            <h2 className="text-center mb-">CONTACT ME</h2>
+                            <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
+                        </div>
+
+                        <div className="col-12 col-md-6 pt-3 m-md-0 m-5">
+
+                            <div className="info-details mb-5">
+                                <div className="address d-flex mb-4">
+                                    <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>
+                                    <span>
+                                        <h5>Address</h5>
+                                        <p className="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </span>
+                                </div>
+                                <div className="address d-flex">
+                                    <i className="fa fa-phone align-bottom fs-3 me-4"></i>
+                                    <span>
+                                        <h5>Phone Number</h5>
+                                        <p>+928751496357</p>
+                                    </span>
+                                </div>
+                            </div>
+
+
+                            <div className="title mb-5">
+                                <h5 className="mb-2">You can also contact me on</h5>
+                                <hr style={{ width: '10%' }} className="m-0" />
+                            </div>
+                            <div className="social-links d-flex">
+                                {
+                                    icons.map((icon) => {
+                                        var key = icons.indexOf(icon);
+                                        return <SocialButton key={key} icon={icon}></SocialButton>
+                                    })
+                                }
+                            </div>
+                        </div>
+                    
 
                     <div className="title mb-5 mt-2 d-md-none">
                         <h2 className="text-center mb-3">Contact From</h2>
@@ -110,6 +136,7 @@ const HomeScreen = () => {
                     <div className="col-12 col-md-6">
                         <ContactForm></ContactForm>
                     </div>
+                </div>
                 </div>
             </section>
 

@@ -2,25 +2,21 @@ import TimeLineDetail from "../base/TimelineDetail";
 import styles from "./Timeline.module.css";
 const TimeLine = (props) => {
     return (
-        <section id="timeline" className="container section-margin position-relative">
-            <div className="title mb-5 pb-3">
-                <h2 className="text-center mb-2">TimeLine</h2>
-                <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
-            </div>
+        <div id="timeline">
 
             <div className={`row container ${styles.separator} `}>
                 <div className="col-12 d-flex justify-content-start justify-content-md-center ">
-                    <div className="border border-top-0 border-bottom-0 border-end-0"></div>
+                    <div className="border border-3 border-top-0 border-bottom-0 border-end-0"></div>
                 </div>
             </div>
             <div className="row body">
                 {
                     props.timelineData.map((data) => (
-                        <TimeLineDetail key = { data.id } data={data}></TimeLineDetail>))
+                        <TimeLineDetail key={data.id} data={data}></TimeLineDetail>))
                 }
             </div>
 
-        </section>
+        </div>
     );
 }
 export default TimeLine;
