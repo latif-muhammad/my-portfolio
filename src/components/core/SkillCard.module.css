@@ -1,0 +1,8 @@
+.iconBox{
+    border-right: 2px solid rgb(209, 200, 200);
+}
+
+.skillCard:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;;
+
+}

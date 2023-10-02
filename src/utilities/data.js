@@ -79,3 +79,73 @@ export const navData = [
     },
 ];
 
+
+export const skills = [
+
+    {
+        icon : "devicon-html5-plain colored",
+        name:"HTML 5"
+      
+    },
+
+    {
+        icon : "devicon-css3-plain colored",
+        name:"CSS 3"
+      
+    },
+
+    {
+        icon : "devicon-bootstrap-plain colored",
+        name:"Bootstrap"
+      
+    },
+
+
+    {
+        icon : "devicon-javascript-plain colored",
+        name:"Java Script"
+      
+    },
+    {
+        icon : "devicon-react-original",
+        name:"React"
+    },
+
+    {
+        icon : "devicon-flutter-plain colored",
+        name:"Java Script"
+      
+    }, 
+    {
+        icon : "devicon-dart-plain colored",
+        name:"dart"
+      
+    },
+
+    {
+        icon : "devicon-python-plain colored",
+        name:"python"
+      
+    },
+    {
+        icon : "devicon-java-plain colored",
+        name:"python"
+      
+    }, 
+    {
+        icon : "devicon-mysql-plain colored",
+        name:"SQL"
+      
+    },
+    {
+        icon : "devicon-firebase-plain colored",
+        name:"Firebase"
+      
+    },
+    {
+        icon : "devicon-mongodb-plain colored",
+        name:"MongoDb"
+      
+    },
+
+]
