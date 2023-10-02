@@ -22,9 +22,11 @@ const Navbar = (props) => {
         };
     }, []);
     return (
-        <nav className={`navbar navbar-expand-lg transition fixed-top py-3 navbar-light ${bgColor} ${shadow}`}>
+        <nav className={`navbar navbar-expand-lg transition fixed-top py-2 navbar-light ${bgColor} ${shadow}`}>
             <div className={"container py-1"}>
-                <a className={"navbar-brand"} href="#">{"</Latif>"}</a>
+                <a className={"navbar-brand"} href="#">
+                    <img src= {require("../../assets/logo.png")} height={ 45 } alt="image not found" />
+                </a>
                 <button className={"navbar-toggler"} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className={"navbar-toggler-icon"}></span>
                 </button>

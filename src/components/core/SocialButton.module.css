@@ -14,5 +14,5 @@
 .SocialButton .icon{
     font-size: 1.4rem;
     vertical-align: bottom;
-    color: var(--primary);
+    color: var(--primary-light-back);
 } 

@@ -23,6 +23,13 @@ p{
 a {
   text-decoration: none;
 }
+input::placeholder{
+  color: var(--primary-light-back)!important;
+}
+textarea::placeholder{
+  color: var(--primary-light-back)!important;
+  
+}
 
 /* 040615 */
 :root {

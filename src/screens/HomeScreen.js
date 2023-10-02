@@ -13,12 +13,12 @@ const HomeScreen = () => {
                 <Navbar data={data.navData}></Navbar>
                 <div className="container px-5">
                     <div className="row" style={{ height: '83vh' }}>
-                        <div className="col intro d-flex container center justify-content-center flex-column ">
+                        <div className="col-md col-sm-12 intro d-flex container center justify-content-center flex-column ">
                             <h5 class="sub-title fw-bold fs-2">Hello !</h5>
                             <h1 class="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
                             <p class="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
                         </div>
-                        <div className="col intro text-white d-flex container center justify-content-center flex-column ">
+                        <div className="col-md display-sm-hidden intro text-white d-flex container center justify-content-center flex-column ">
                             <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
                         </div>
                     </div>
@@ -68,17 +68,10 @@ const HomeScreen = () => {
                     {
                         data.projects.map((data) => (
                             <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                                <ProjectsCard title = {data.name} ></ProjectsCard>
+                                <ProjectsCard title={data.name} ></ProjectsCard>
                             </div>
                         ))
                     }
-                    {/* 
-                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                        <ProjectsCard></ProjectsCard>
-                    </div>
-                    <div class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                        <ProjectsCard></ProjectsCard>
-                    </div> */}
 
                 </div>
 
@@ -87,9 +80,10 @@ const HomeScreen = () => {
                 </div>
             </section>
 
-            <section className="contactSections section-margin bg-light section-top-padding">
-                <div className="container">
+            <section className="contactSections bg-dark text-light section-top-padding">
+                <div className="container mb-4">
                     <div className="row">
+
                         <div className="title mb-0 mb-md-5">
                             <h2 className="text-center mb-">CONTACT ME</h2>
                             <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
@@ -102,21 +96,21 @@ const HomeScreen = () => {
                                     <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>
                                     <span>
                                         <h5>Address</h5>
-                                        <p className="mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <p className="mb-3">Gulshan e Iqbal, IBA Boys Hostel Karachi</p>
                                     </span>
                                 </div>
                                 <div className="address d-flex">
                                     <i className="fa fa-phone align-bottom fs-3 me-4"></i>
                                     <span>
                                         <h5>Phone Number</h5>
-                                        <p>+928751496357</p>
+                                        <p>+923169306176</p>
                                     </span>
                                 </div>
                             </div>
 
 
                             <div className="title mb-5">
-                                <h5 className="mb-2">You can also contact me on</h5>
+                                <h5 className="mb-2">You can contact me on</h5>
                                 <hr style={{ width: '10%' }} className="m-0" />
                             </div>
                             <div className="social-links d-flex">
@@ -134,12 +128,13 @@ const HomeScreen = () => {
                             <h2 className="text-center mb-3">Contact From</h2>
                             <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
                         </div>
-
-
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 mb-5">
                             <ContactForm></ContactForm>
                         </div>
                     </div>
+                </div>
+                <div className="d-flex justify-content-center" style={{backgroundColor: 'var(--bs-gray-dark)'}}>
+                            <p className='m-0 p-2'>Made by .....</p>
                 </div>
             </section>
 
