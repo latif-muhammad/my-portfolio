@@ -7,7 +7,7 @@ const SkillCard = (props) => {
                         <i class={`${props.icon} colored px-2 py-3 fs-1`}></i>
                     </div>
                     <div class="content">
-                        <h6 class="title mb-0 fs-5">{props.children}</h6>
+                        <h6 class="title mb-0 fs-5 text-capitalize">{props.children}</h6>
                     </div>
                 </div>
             </div>

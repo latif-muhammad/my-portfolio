@@ -10,7 +10,7 @@ const HomeScreen = () => {
     const icons = ["fa fa-facebook", "fa fa-twitter", "fa fa-linkedin", "fa fa-github"];
     return (
         <div>
-            <section className={`section-margin header bg-light`}>
+            <section className={`section-margin header  bg-light`}>
                 <Navbar data={data.navData}></Navbar>
                 <div className="container px-5">
                     <div className="row" style={{ height: '83vh' }}>
@@ -59,6 +59,7 @@ const HomeScreen = () => {
                 </div>
             </section>
 
+
             <section id="skills">
                 <div id="timeline" className="container section-margin">
                     <div className="title mb-2 pb-3">
@@ -67,37 +68,39 @@ const HomeScreen = () => {
                     </div>
                     <div className="row">
                         {
-                            data.skills.map((skill)=> (
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
-                                <SkillCard icon = {skill.icon} >{skill.name}</SkillCard>
-                            </div> 
+                            data.skills.map((skill) => (
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
+                                    <SkillCard icon={skill.icon} >{skill.name}</SkillCard>
+                                </div>
                             ))
-                        }                        
+                        }
                     </div>
                 </div>
             </section>
 
 
-            <section className="projects container section-margin">
-                <div className="title mb-5 pb-3">
-                    <h2 className="text-center mb-2">PROJECTS</h2>
-                    <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
-                </div>
-                <div className="row mb-5">
-                    {
-                        data.projects.map((data) => (
-                            <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                                <ProjectsCard title={data.name} ></ProjectsCard>
-                            </div>
-                        ))
-                    }
+            <section className="projects section-top-padding pb-5 bg-light">
+                <div className="container pb-3">
+                    <div className="title mb-5 pb-3">
+                        <h2 className="text-center mb-2">PROJECTS</h2>
+                        <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
+                    </div>
+                    <div className="row mb-5 pb-2">
+                        {
+                            data.projects.map((data) => (
+                                <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                                    <ProjectsCard title={data.name} ></ProjectsCard>
+                                </div>
+                            ))
+                        }
 
-                </div>
+                    </div>
 
-                <div className="d-flex justify-content-center ">
-                    <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2">View Work</button>
+                    <div className="d-flex justify-content-center ">
+                        <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2">View Work</button>
 
 
+                    </div>
                 </div>
             </section>
 

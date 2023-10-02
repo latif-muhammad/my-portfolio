@@ -129,7 +129,7 @@ export const skills = [
     },
     {
         icon : "devicon-java-plain colored",
-        name:"python"
+        name:"java"
       
     }, 
     {
