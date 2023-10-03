@@ -7,12 +7,14 @@ import ProjectsCard from "../components/base/ProjectsCard"
 import SkillCard from '../components/core/SkillCard';
 
 const HomeScreen = () => {
-    const icons = ["fa fa-facebook", "fa fa-twitter", "fa fa-linkedin", "fa fa-github"];
+    const githubAcc = () => {
+        return window.location.href = 'https://github.com/latif-muhammad';
+    }
     return (
         <div>
-            <section className={`section-margin header  bg-light`}>
+            <section  className={`section-margin header  bg-light`}>
                 <Navbar data={data.navData}></Navbar>
-                <div className="container px-5">
+                <div  id = "Home" className="container px-5">
                     <div className="row" style={{ height: '83vh' }}>
                         <div className="col-md col-sm-12 intro d-flex container center justify-content-center flex-column ">
                             <h5 class="sub-title fw-bold fs-2">Hello !</h5>
@@ -40,8 +42,8 @@ const HomeScreen = () => {
                             <p className="mb-5">Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
 
                             <div className="flex">
-                                <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
-                                <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-danger px-3 py-2">View More</button>
+                                <button onClick={githubAcc} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
+                                <button onClick={githubAcc} className="btn btn-danger px-3 py-2">View More</button>
                             </div>
                         </div>
                     </div>
@@ -49,8 +51,8 @@ const HomeScreen = () => {
             </section>
 
 
-            <section className="section-margin timelineSection bg-light section-top-padding">
-                <div id="timeline" className="container section-margin position-relative">
+            <section id="Timeline" className="section-margin timelineSection bg-light section-top-padding">
+                <div  className="container section-margin position-relative">
                     <div className="title mb-5 pb-3">
                         <h2 className="text-center mb-2">TimeLine</h2>
                         <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
@@ -60,7 +62,7 @@ const HomeScreen = () => {
             </section>
 
 
-            <section id="skills">
+            <section id="Skills">
                 <div id="timeline" className="container section-margin">
                     <div className="title mb-2 pb-3">
                         <h2 className="text-center mb-2">What I Know</h2>
@@ -79,7 +81,7 @@ const HomeScreen = () => {
             </section>
 
 
-            <section className="projects section-top-padding pb-5 bg-light">
+            <section id = "Projects" className="projects section-top-padding pb-5 bg-light">
                 <div className="container pb-3">
                     <div className="title mb-5 pb-3">
                         <h2 className="text-center mb-2">PROJECTS</h2>
@@ -89,7 +91,7 @@ const HomeScreen = () => {
                         {
                             data.projects.map((data) => (
                                 <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
-                                    <ProjectsCard title={data.name} ></ProjectsCard>
+                                    <ProjectsCard title={data.name} image={data.image} link={data.link}></ProjectsCard>
                                 </div>
                             ))
                         }
@@ -97,14 +99,12 @@ const HomeScreen = () => {
                     </div>
 
                     <div className="d-flex justify-content-center ">
-                        <button onClick={() => { window.location.href = 'https://github.com/latif-muhammad' }} className="btn btn-outline-danger px-3 py-2">View Work</button>
-
-
+                        <button onClick={githubAcc} className="btn btn-outline-danger px-3 py-2">View Work</button>
                     </div>
                 </div>
             </section>
 
-            <section className="contactSections bg-dark text-light section-top-padding">
+            <section id = "Contacts" className="contactSections bg-dark text-light section-top-padding">
                 <div className="container mb-4">
                     <div className="row">
 
@@ -114,13 +114,12 @@ const HomeScreen = () => {
                         </div>
 
                         <div className="col-12 col-md-6 pt-3 m-md-0 m-5">
-
                             <div className="info-details mb-5">
                                 <div className="address d-flex mb-4">
                                     <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>
                                     <span>
-                                        <h5>Address</h5>
-                                        <p className="mb-3">Gulshan e Iqbal, IBA Boys Hostel Karachi</p>
+                                        <h5>Email</h5>
+                                        <a href="mailto:m.latif.25120@khi.iba.edu.pk" className="mb-3 text-light">m.latif.25120@khi.iba.edu.pk</a>
                                     </span>
                                 </div>
                                 <div className="address d-flex">
@@ -130,6 +129,7 @@ const HomeScreen = () => {
                                         <p>+923169306176</p>
                                     </span>
                                 </div>
+
                             </div>
 
 
@@ -139,9 +139,8 @@ const HomeScreen = () => {
                             </div>
                             <div className="social-links d-flex">
                                 {
-                                    icons.map((icon) => {
-                                        var key = icons.indexOf(icon);
-                                        return <SocialButton key={key} icon={icon}></SocialButton>
+                                    data.socialContacts.map((contact) => {
+                                        return <SocialButton key={contact.key} icon={contact.icon} link={contact.link}></SocialButton>
                                     })
                                 }
                             </div>

@@ -10,12 +10,11 @@ const TimeLineDetail = (props) => {
                 </div>
 
                 <div className="d-flex justify-content-start align-items-baseline">
-                    <h4 className="mb-2 pe-3" style={{ color : 'var(--primary)'}}>{props.data.title}</h4>
+                    <h3 className="mb-2 pe-3" style={{ color: 'var(--primary)' }}>{props.data.title}</h3>
+                    <span><h5 className="">{props.data.role}</h5></span>
                     <span className="mb-0 align-bottom" >{props.data.year}</span>
                 </div>
-                {/* <P>ROLE</P> */}
                 <hr style={{ width: "5rem", height: "0.09rem" }} className="mt-0 mb-3 p-0" />
-
                 <p className="text-start">{props.data.detail}</p>
             </div>
         </div>
