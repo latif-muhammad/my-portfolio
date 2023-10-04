@@ -3,7 +3,7 @@ import Timeline from '../components/core/Timeline';
 import * as data from "../utilities/data";
 import ContactForm from "../components/UI/ContactForm";
 import SocialButton from "../components/core/SocialButton";
-import ProjectsCard from "../components/base/ProjectsCard"
+import ProjectsCard from "../components/core/ProjectsCard"
 import SkillCard from '../components/core/SkillCard';
 
 const HomeScreen = () => {

@@ -1,4 +1,4 @@
-import styles from "../base/projectCard.module.css"
+import styles from "../core/projectCard.module.css"
 const ProjectCard = (props) => {
     const redirect = () => {
         return window.location.href = props.link;
