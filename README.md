@@ -20,4 +20,5 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 - GitHub: [GitHub Profile](https://github.com/latif-muhammad)
 - Portfolio Website: [Your Portfolio Website](https://latif-muhammad.me)
 
-#ps: It's not live yet, Need to add things
+## Go to Site
+- Portfolio Site: https://latif-muhammad.github.io/my-portfolio/
