@@ -7,7 +7,7 @@
   }
 .SocialButton:hover{
     background-color: var(--primary);
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     color: white;
 
   }  
