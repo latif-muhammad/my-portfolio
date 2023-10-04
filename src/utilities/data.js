@@ -13,7 +13,7 @@ export const timelineData = [
         title: "Uconnect Technologies",
         role:"Flutter Intern",
         year: "2015 - 2020",
-        detail: "I have experience in using the Flutter framework, where I worked on adding new features, creating user interface elements, and connecting with different APIs. I also managed how the app keeps track of information and handled user interactions. I collaborated with designers to make sure the app looks and works the way it's supposed to",
+        detail: "I have experience in using the Flutter framework, where I worked on adding new features, creating user interface elements, and connecting with different APIs. I also managed how the app keeps track of information and handled user interactions.",
 
     },
     {
