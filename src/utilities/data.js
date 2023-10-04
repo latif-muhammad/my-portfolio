@@ -4,7 +4,7 @@ export const timelineData = [
         title: "IBA Karachi",
         role:"Student ",
         year: "2021 - 2025",
-        detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
+        detail: "I'm currently studying at IBA Karachi, a renowned institution known for its academic excellence and vibrant learning environment. The rigorous curriculum and diverse student body have greatly enriched my educational experience, preparing me for a successful career ahead",
 
     },
 
@@ -21,7 +21,7 @@ export const timelineData = [
         title: "AKHSS, Gilgit",
         role:"student ",
         year: "2015 - 2020",
-        detail: "I wrote my first line code when I was 16, this started my journey into digital craftsmanship that I never could've imagined. Even thought it was just a print statement but it created a spark, which would later light up the path for me.",
+        detail: "During my tenure at Aga Khan Higher Secondary School in Gilgit, I had the privilege of receiving a well-rounded education that significantly contributed to both my academic and personal development.",
 
     },
     {
