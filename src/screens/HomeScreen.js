@@ -162,7 +162,7 @@ const HomeScreen = () => {
                     </div>
                 </div>
                 <div className="d-flex justify-content-center" style={{ backgroundColor: 'var(--bs-gray-dark)' }}>
-                    <p className='m-0 p-2'>Made by Muhammad Latif</p>
+                    <p className='m-0 p-2'>© Copyright 2018 <b>MUHAMMAD LATIF</b>, | All Rights Reserved</p>
                 </div>
             </section>
 
