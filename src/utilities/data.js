@@ -2,7 +2,7 @@ export const timelineData = [
     {
         id: 3,
         title: "IBA Karachi",
-        role:"Student ",
+        role: "Student ",
         year: "2021 - 2025",
         detail: "I'm currently studying at IBA Karachi, a renowned institution known for its academic excellence and vibrant learning environment. The rigorous curriculum and diverse student body have greatly enriched my educational experience, preparing me for a successful career ahead",
 
@@ -11,7 +11,7 @@ export const timelineData = [
     {
         id: 2,
         title: "Uconnect Technologies",
-        role:"Flutter Intern",
+        role: "Flutter Intern",
         year: "2015 - 2020",
         detail: "I have experience in using the Flutter framework, where I worked on adding new features, creating user interface elements, and connecting with different APIs. I also managed how the app keeps track of information and handled user interactions.",
 
@@ -19,7 +19,7 @@ export const timelineData = [
     {
         id: 1,
         title: "AKHSS, Gilgit",
-        role:"student ",
+        role: "student ",
         year: "2015 - 2020",
         detail: "During my tenure at Aga Khan Higher Secondary School in Gilgit, I had the privilege of receiving a well-rounded education that significantly contributed to both my academic and personal development.",
 
@@ -66,7 +66,7 @@ export const navData = [
     {
         id: 1,
         title: "About",
-    }, 
+    },
     {
         id: 2,
         title: "Timeline",
@@ -92,18 +92,21 @@ export const navData = [
 export const skills = [
 
     {
+        id: 0,
         icon: "devicon-html5-plain colored",
         name: "HTML 5"
 
     },
 
     {
+        id: 1,
         icon: "devicon-css3-plain colored",
         name: "CSS 3"
 
     },
 
     {
+        id: 2,
         icon: "devicon-bootstrap-plain colored",
         name: "Bootstrap"
 
@@ -111,47 +114,56 @@ export const skills = [
 
 
     {
+        id: 3,
         icon: "devicon-javascript-plain colored",
         name: "Java Script"
 
     },
     {
+        id: 4,
         icon: "devicon-react-original",
         name: "React"
     },
 
     {
+        id: 5,
         icon: "devicon-flutter-plain colored",
         name: "Java Script"
 
     },
     {
+        id: 6,
         icon: "devicon-dart-plain colored",
         name: "dart"
 
     },
 
     {
+        id: 7,
         icon: "devicon-python-plain colored",
         name: "python"
 
     },
     {
+        id: 8,
         icon: "devicon-java-plain colored",
         name: "java"
 
     },
     {
+        id: 9,
         icon: "devicon-mysql-plain colored",
         name: "SQL"
 
     },
     {
+        id: 10,
         icon: "devicon-firebase-plain colored",
         name: "Firebase"
 
     },
     {
+        id: 11,
         icon: "devicon-mongodb-plain colored",
         name: "MongoDb"
 

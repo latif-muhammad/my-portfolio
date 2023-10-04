@@ -17,9 +17,9 @@ const HomeScreen = () => {
                 <div id="Home" className="container px-5">
                     <div className="row" style={{ height: '83vh' }}>
                         <div className="col-md col-sm-12 intro d-flex container center justify-content-center flex-column ">
-                            <h5 class="sub-title fw-bold fs-2">Hello !</h5>
-                            <h1 class="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
-                            <p class="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
+                            <h5 className="sub-title fw-bold fs-2">Hello !</h5>
+                            <h1 className="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
+                            <p className="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
                         </div>
 
                         <div className="profileImage col-md intro text-white d-flex container center justify-content-center flex-column ">
@@ -67,7 +67,7 @@ const HomeScreen = () => {
             {/* Skills */}
 
             <section id="Skills">
-                <div id="timeline" className="container section-margin">
+                <div className="container section-margin">
                     <div className="title mb-2 pb-3">
                         <h2 className="text-center mb-2">What I Know</h2>
                         <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
@@ -75,7 +75,7 @@ const HomeScreen = () => {
                     <div className="row">
                         {
                             data.skills.map((skill) => (
-                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
+                                <div key = {skill.id}  className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
                                     <SkillCard icon={skill.icon} >{skill.name}</SkillCard>
                                 </div>
                             ))
@@ -95,7 +95,7 @@ const HomeScreen = () => {
                     <div className="row mb-5 pb-2">
                         {
                             data.projects.map((data) => (
-                                <div key={data.id} class="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
+                                <div key={data.id} className="col-lg-4 col-md-3 mt-4 picture-item" data-groups='["photography"]'>
                                     <ProjectsCard title={data.name} image={data.image} link={data.link}></ProjectsCard>
                                 </div>
                             ))

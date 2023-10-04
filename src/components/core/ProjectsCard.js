@@ -4,16 +4,16 @@ const ProjectCard = (props) => {
         return window.location.href = props.link;
     }
     return (
-        <div onClick={redirect} class={`item-box projects rounded transition bg-white overflow-hidden ${styles.projects}`}>
-            <div class="body" >
+        <div onClick={redirect} className={`item-box projects rounded transition bg-white overflow-hidden ${styles.projects}`}>
+            <div className="body" >
                 <div style={{ height: '27rem' }}>
-                    <img class="item-container img-fluid mx-auto" src={require(`../../assets/projects_images/${props.image}`)} alt="1" height={'25rem'} width={'100%'} />
+                    <img className="item-container img-fluid mx-auto" src={require(`../../assets/projects_images/${props.image}`)} alt="1" height={'25rem'} width={'100%'} />
                 </div>
-                <div class="text-center">
-                    <i data-feather="camera" class="fea icon-sm image-icon"></i>
+                <div className="text-center">
+                    <i data-feather="camera" className="fea icon-sm image-icon"></i>
                 </div>
             </div>
-            <div class="py-4 text-center">
+            <div className="py-4 text-center">
                 <h5 className="text-dark text-uppercase"> {props.title} </h5>
             </div>
         </div>
