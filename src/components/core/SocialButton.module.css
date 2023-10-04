@@ -2,7 +2,7 @@
     width: 3.4rem;
     height: 3.4rem;
     border-radius: 30%;
-    border: 2px solid var(--primary);
+    border: 1px solid var(--primary);
     background-color: transparent;
   }
 .SocialButton:hover{

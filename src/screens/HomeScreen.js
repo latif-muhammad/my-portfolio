@@ -157,7 +157,7 @@ const HomeScreen = () => {
                     </div>
                 </div>
                 <div className="d-flex justify-content-center" style={{ backgroundColor: 'var(--bs-gray-dark)' }}>
-                    <p className='m-0 p-2'>Made by .....</p>
+                    <p className='m-0 p-2'>Made by Muhammad Latif</p>
                 </div>
             </section>
 
