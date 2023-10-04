@@ -12,16 +12,17 @@ const HomeScreen = () => {
     }
     return (
         <div>
-            <section  className={`section-margin header  bg-light`}>
+            <section className={`section-margin header bg-light`}>
                 <Navbar data={data.navData}></Navbar>
-                <div  id = "Home" className="container px-5">
+                <div id="Home" className="container px-5">
                     <div className="row" style={{ height: '83vh' }}>
                         <div className="col-md col-sm-12 intro d-flex container center justify-content-center flex-column ">
                             <h5 class="sub-title fw-bold fs-2">Hello !</h5>
                             <h1 class="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
                             <p class="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
                         </div>
-                        <div className="col-md display-sm-hidden intro text-white d-flex container center justify-content-center flex-column ">
+
+                        <div className="profileImage col-md intro text-white d-flex container center justify-content-center flex-column ">
                             <img src={require('../assets/ab-img.png')} className="pt-5 mt-5" alt="Not Found" height="auto" width="100%" />
                         </div>
                     </div>
@@ -51,8 +52,10 @@ const HomeScreen = () => {
             </section>
 
 
+        {/* Timeline */}
+
             <section id="Timeline" className="section-margin timelineSection bg-light section-top-padding">
-                <div  className="container section-margin position-relative">
+                <div className="container section-margin position-relative">
                     <div className="title mb-5 pb-3">
                         <h2 className="text-center mb-2">TimeLine</h2>
                         <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
@@ -61,6 +64,7 @@ const HomeScreen = () => {
                 </div>
             </section>
 
+            {/* Skills */}
 
             <section id="Skills">
                 <div id="timeline" className="container section-margin">
@@ -80,8 +84,9 @@ const HomeScreen = () => {
                 </div>
             </section>
 
+            {/* Projects */}
 
-            <section id = "Projects" className="projects section-top-padding pb-5 bg-light">
+            <section id="Projects" className="projects section-top-padding pb-5 bg-light">
                 <div className="container pb-3">
                     <div className="title mb-5 pb-3">
                         <h2 className="text-center mb-2">PROJECTS</h2>
@@ -95,16 +100,16 @@ const HomeScreen = () => {
                                 </div>
                             ))
                         }
-
                     </div>
-
                     <div className="d-flex justify-content-center ">
                         <button onClick={githubAcc} className="btn btn-outline-danger px-3 py-2">View Work</button>
                     </div>
                 </div>
             </section>
 
-            <section id = "Contacts" className="contactSections bg-dark text-light section-top-padding">
+            {/* Contacts */}
+
+            <section id="Contacts" className="contactSections bg-dark text-light section-top-padding">
                 <div className="container mb-4">
                     <div className="row">
 
@@ -113,7 +118,7 @@ const HomeScreen = () => {
                             <hr style={{ width: "6%" }} className="text-center mx-auto m-0" />
                         </div>
 
-                        <div className="col-12 col-md-6 pt-3 m-md-0 m-5">
+                        <div className="col-12 col-md-6 pt-3 m-md-0 mb-5">
                             <div className="info-details mb-5">
                                 <div className="address d-flex mb-4">
                                     <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>

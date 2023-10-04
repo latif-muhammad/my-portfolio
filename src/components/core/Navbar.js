@@ -23,7 +23,7 @@ const Navbar = (props) => {
         };
     }, []);
     return (
-        <nav className={`navbar navbar-expand-lg transition fixed-top py-2 navbar-light ${bgColor} ${shadow}`}>
+        <nav style={{width: '100%'}}  className={`navbar navbar-expand-lg transition fixed-top py-2 navbar-light ${bgColor} ${shadow}`}>
             <div className={"container py-1"}>
                 <a className={"navbar-brand"} href="#Home">
                     <img src={require("../../assets/logo.png")} height={45} alt="not found" />
