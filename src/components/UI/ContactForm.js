@@ -1,35 +1,59 @@
-import {useRef} from 'react'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 const ContactForm = (props) => {
-    const email = useRef('');
-    const message = useRef('');
+    const name = useRef("");
+    const email = useRef("");
+    const message = useRef("");
+    const config = require('../../utilities/config.js');
+
+    const serviceID = config.smtp.serviceID;
+    const templateId = config.smtp.templateId;
+    const publicKey = config.smtp.publicKey;
+    
+    let data = {
+        from_name: name.current.value,
+        message: message.current.value,
+        email: email.current.value,
+    }
 
     const formSubmission = (event) => {
+        console.log(serviceID);
+        console.log(templateId);
+        console.log(publicKey);
+        
         event.preventDefault();
-        console.log(email.current.value);
-        console.log(message.current.value);
 
-
+        emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
+            if (response.status === 200) {
+                console.log('SUCCESS!', response.status, response.text);
+                email.current.value = "";
+                name.current.value = "";
+                message.current.value = "";
+            }
+        }, function (err) {
+            console.log('FAILED...', err);
+        });
     }
-    
+
     return (
         <form>
             <div className="form-group mb-4">
                 <label htmlFor="name" className="mb-2 custom-sub-title">Name</label>
                 <input type="name" className="form-control bg-transparent border-muted py-2 text-light  " id="contact-name"
-                    placeholder="Name" />
+                    placeholder="Name" ref={name} />
             </div>
             <div className="form-group mb-4">
                 <label htmlFor="exampleInputEmail1" className="mb-2 custom-sub-title">Email address</label>
                 <input type="email" className="form-control bg-transparent border-muted py-2 text-light" id="contact-email"
-                     placeholder="Email" ref = { email }/>
+                    placeholder="Email" ref={email} />
             </div>
             <div className="form-group mb-4">
                 <label htmlFor="exampleFormControlTextarea1" className="mb-2 custom-sub-title">Message</label>
                 <textarea className="form-control bg-transparent border-muted py-2 text-light" id="exampleFormControlTextarea1"
-                    placeholder="Type Message here.." rows="4" ref = { message }></textarea>
+                    placeholder="Type Message here.." rows="4" ref={message}></textarea>
             </div>
-            <button onClick= { formSubmission } type="submit" className="btn btn-danger px-3 py-2">Submit</button>
+            <button onClick={formSubmission} type="submit" className="btn btn-danger px-3 py-2">Submit</button>
         </form>
     )
 }
