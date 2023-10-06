@@ -1,4 +1,17 @@
+import {useRef} from 'react'
+
 const ContactForm = (props) => {
+    const email = useRef('');
+    const message = useRef('');
+
+    const formSubmission = (event) => {
+        event.preventDefault();
+        console.log(email.current.value);
+        console.log(message.current.value);
+
+
+    }
+    
     return (
         <form>
             <div className="form-group mb-4">
@@ -9,14 +22,14 @@ const ContactForm = (props) => {
             <div className="form-group mb-4">
                 <label htmlFor="exampleInputEmail1" className="mb-2 custom-sub-title">Email address</label>
                 <input type="email" className="form-control bg-transparent border-muted py-2 text-light" id="contact-email"
-                    aria-describedby="emailHelp" placeholder="Email" />
+                     placeholder="Email" ref = { email }/>
             </div>
             <div className="form-group mb-4">
                 <label htmlFor="exampleFormControlTextarea1" className="mb-2 custom-sub-title">Message</label>
                 <textarea className="form-control bg-transparent border-muted py-2 text-light" id="exampleFormControlTextarea1"
-                    placeholder="Type Message here.." rows="4"></textarea>
+                    placeholder="Type Message here.." rows="4" ref = { message }></textarea>
             </div>
-            <button type="submit" className="btn btn-danger px-3 py-2">Submit</button>
+            <button onClick= { formSubmission } type="submit" className="btn btn-danger px-3 py-2">Submit</button>
         </form>
     )
 }
