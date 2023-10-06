@@ -6,3 +6,9 @@
 .link:hover{
     color: var(--primary)!important;
 }
+
+@media (max-width: 576px) { 
+    .background{
+        background-color: white !important;
+    }
+}

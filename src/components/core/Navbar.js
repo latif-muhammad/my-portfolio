@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
 const Navbar = (props) => {
-
     const [bgColor, setBgColor] = useState('transparent');
     const [shadow, setShadow] = useState('');
 
@@ -23,7 +22,7 @@ const Navbar = (props) => {
         };
     }, []);
     return (
-        <nav style={{width: '100%'}}  className={`navbar navbar-expand-lg transition fixed-top py-2 navbar-light ${bgColor} ${shadow}`}>
+        <nav style={{width: '100%' } }  className={`navbar navbar-expand-lg transition fixed-top py-2 navbar-light ${bgColor} ${shadow} ${styles.background }`}>
             <div className={"container py-1"}>
                 <a className={"navbar-brand"} href="#Home">
                     <img src={require("../../assets/logo.png")} height={45} alt="not found" />
