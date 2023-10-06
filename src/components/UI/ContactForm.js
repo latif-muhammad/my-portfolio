@@ -21,6 +21,7 @@ const ContactForm = (props) => {
     }
 
     const formSubmission = (event) => {
+        console.log("this is ",publicKey);
         
         event.preventDefault();
         emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
@@ -37,6 +38,7 @@ const ContactForm = (props) => {
 
     return (
         <form>
+           
             <div className="form-group mb-4">
                 <label htmlFor="name" className="mb-2 custom-sub-title">Name</label>
                 <input type="name" className="form-control bg-transparent border-muted py-2 text-light  " id="contact-name"
