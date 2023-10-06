@@ -10,7 +10,10 @@ const ContactForm = (props) => {
     const serviceID = config.smtp.serviceID;
     const templateId = config.smtp.templateId;
     const publicKey = config.smtp.publicKey;
-    
+   
+    //USE YOUR KEYS HERE
+    //CREATE ACCOUNT AT EMAILJS
+
     let data = {
         from_name: name.current.value,
         message: message.current.value,
@@ -18,12 +21,8 @@ const ContactForm = (props) => {
     }
 
     const formSubmission = (event) => {
-        console.log(serviceID);
-        console.log(templateId);
-        console.log(publicKey);
         
         event.preventDefault();
-
         emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
             if (response.status === 200) {
                 console.log('SUCCESS!', response.status, response.text);
