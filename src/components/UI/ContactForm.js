@@ -21,8 +21,6 @@ const ContactForm = (props) => {
     }
 
     const formSubmission = (event) => {
-        console.log("this is ",publicKey);
-        
         event.preventDefault();
         emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
             if (response.status === 200) {
