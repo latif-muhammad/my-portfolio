@@ -2,9 +2,9 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 
 const ContactForm = (props) => {
-    const name = useRef("");
-    const email = useRef("");
-    const message = useRef("");
+    const name = useRef('');
+    const email = useRef('');
+    const message = useRef('');
     const config = require('../../utilities/config.js');
 
     const serviceID = config.smtp.serviceID;
@@ -14,13 +14,14 @@ const ContactForm = (props) => {
     //USE YOUR KEYS HERE
     //CREATE ACCOUNT AT EMAILJS
 
-    let data = {
-        from_name: name.current.value,
-        message: message.current.value,
-        email: email.current.value,
-    }
+  
 
     const formSubmission = (event) => {
+        let data = {
+            from_name: name.current.value,
+            message: message.current.value,
+            email: email.current.value,
+        }
         event.preventDefault();
         emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
             if (response.status === 200) {
@@ -39,7 +40,7 @@ const ContactForm = (props) => {
            
             <div className="form-group mb-4">
                 <label className="mb-2 custom-sub-title">Name</label>
-                <input type="name" className="form-control bg-transparent border-muted py-2 text-light  " id="contact-name"
+                <input type="name" className="form-control bg-transparent border-muted py-2 text-light" id="contact-name"
                     placeholder="Name" ref={name} />
             </div>
             <div className="form-group mb-4">
