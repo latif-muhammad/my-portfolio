@@ -38,17 +38,17 @@ const ContactForm = (props) => {
         <form>
            
             <div className="form-group mb-4">
-                <label htmlFor="name" className="mb-2 custom-sub-title">Name</label>
+                <label className="mb-2 custom-sub-title">Name</label>
                 <input type="name" className="form-control bg-transparent border-muted py-2 text-light  " id="contact-name"
                     placeholder="Name" ref={name} />
             </div>
             <div className="form-group mb-4">
-                <label htmlFor="exampleInputEmail1" className="mb-2 custom-sub-title">Email address</label>
+                <label className="mb-2 custom-sub-title">Email address</label>
                 <input type="email" className="form-control bg-transparent border-muted py-2 text-light" id="contact-email"
                     placeholder="Email" ref={email} />
             </div>
             <div className="form-group mb-4">
-                <label htmlFor="exampleFormControlTextarea1" className="mb-2 custom-sub-title">Message</label>
+                <label className="mb-2 custom-sub-title">Message</label>
                 <textarea className="form-control bg-transparent border-muted py-2 text-light" id="exampleFormControlTextarea1"
                     placeholder="Type Message here.." rows="4" ref={message}></textarea>
             </div>

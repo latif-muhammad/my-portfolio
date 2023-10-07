@@ -11,7 +11,7 @@ const HomeScreen = () => {
         return window.location.href = 'https://github.com/latif-muhammad';
     }
     return (
-        <div>
+        <>
             <section className={`section-margin header bg-light`}>
                 <Navbar data={data.navData}></Navbar>
                 <div id="Home" className="container px-5">
@@ -166,7 +166,7 @@ const HomeScreen = () => {
                 </div>
             </section>
 
-        </div>
+        </>
     )
 }
 export default HomeScreen;

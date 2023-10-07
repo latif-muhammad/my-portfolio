@@ -2,7 +2,7 @@ import styles from "./TimelineDetail.module.css";
 
 const TimeLineDetail = (props) => {
     return (
-        <div>
+        <>
             <div key={props.data.id} className={`timeline-details position-relative 
         offset-0  col-12 col-md-6 ps-5 pb-0 pb-md-5 mb-5 mb-md-0 ${props.data.id % 2 === 0 ? "offset-md-6" : "pe-5"}`}>
                 <div className={`${styles.dot} position-absolute`} style={props.data.id % 2 === 0 ? { left: -10 } : { right: -10 }}>
@@ -17,7 +17,7 @@ const TimeLineDetail = (props) => {
                 <hr style={{ width: "5rem", height: "0.09rem" }} className="mt-0 mb-3 p-0" />
                 <p className="text-start">{props.data.detail}</p>
             </div>
-        </div>
+        </>
     );
 }
 
