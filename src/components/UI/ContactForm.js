@@ -67,7 +67,7 @@ const ContactForm = (props) => {
                     </div>
                     :
 
-                    <button onClick={formSubmission} type="submit" className="me-2 btn btn-danger px-3 py-2">Submit</button>
+                    <button onClick={formSubmission} type="submit" className="me-2 btn btn-danger px-3 py-2" disabled>Submit</button>
             }
             <span className={`badge ${successMsg === 'sent' ? "text-bg-success" : "text-bg-danger"} p-1 ${(successMsg !== '') ? "" : "fade"}`}>{successMsg}</span>
 
