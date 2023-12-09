@@ -18,7 +18,7 @@ const HomeScreen = () => {
                     <div className="row" style={{ height: '83vh' }}>
                         <div className="col-md col-sm-12 intro d-flex container center justify-content-center flex-column ">
                             <h5 className="sub-title fw-bold fs-2">Hello !</h5>
-                            <h1 className="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Muhammad Latif</h1>
+                            <h1 className="heading mb-3" style={{ color: 'var(--primary)' }}>I'm Testing CICD</h1>
                             <p className="para-desc text-muted fs-5">I'm a Flutter and React Developer. Experienced with all stages of the development cycle for dynamic projects.</p>
                         </div>
 
