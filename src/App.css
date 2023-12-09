@@ -1,11 +1,10 @@
+
 body {
-  margin: 0!important;  
+  margin: 0 !important;
   font-weight: 400;
   background-color: white;
   letter-spacing: 0.03rem !important;
   line-height: 1.5;
-  font-family: 'ubuntu', 'Roboto', sans-serif;
-
 }
 
 /* constants */
@@ -16,18 +15,22 @@ hr {
   border: 0;
   text-decoration: none;
 }
-p{
+
+p {
   font-size: 1rem;
 }
+
 a {
   text-decoration: none;
 }
-input::placeholder{
-  color: var(--primary-light-back)!important;
+
+input::placeholder {
+  color: var(--primary-light-back) !important;
 }
-textarea::placeholder{
-  color: var(--primary-light-back)!important;
-  
+
+textarea::placeholder {
+  color: var(--primary-light-back) !important;
+
 }
 
 :root {
@@ -49,8 +52,9 @@ textarea::placeholder{
 .section-margin {
   margin-bottom: 5rem !important;
 }
-.section-top-padding{
-  padding-top: 4rem!important;
+
+.section-top-padding {
+  padding-top: 4rem !important;
 }
 
 .transition {
@@ -63,8 +67,8 @@ textarea::placeholder{
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   .profileImage {
-    display: none!important;
+    display: none !important;
   }
 }

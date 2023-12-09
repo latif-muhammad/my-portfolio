@@ -52,7 +52,7 @@ export const projects = [
     {
         id: 2,
         name: "Twitter Clone",
-        languages: ["Dart", "flutter"],
+        languages: ["node", "flutter"],
         image: "twitter.jpg",
         link: "https://github.com/latif-muhammad"
     }
@@ -128,7 +128,7 @@ export const skills = [
     {
         id: 5,
         icon: "devicon-flutter-plain colored",
-        name: "Java Script"
+        name: "FLutter"
 
     },
     {

@@ -42,21 +42,21 @@ const ContactForm = (props) => {
     }
 
     return (
-        <form>
+        <form onSubmit={formSubmission} novalidate>
             <div className="form-group mb-4">
                 <label className="mb-2 custom-sub-title">Name</label>
                 <input type="name" className="form-control bg-transparent border-muted py-2 text-light" id="contact-name"
-                    placeholder="Name" ref={name} />
+                    placeholder="Name" ref={name} required />
             </div>
             <div className="form-group mb-4">
                 <label className="mb-2 custom-sub-title">Email address</label>
                 <input type="email" className="form-control bg-transparent border-muted py-2 text-light" id="contact-email"
-                    placeholder="Email" ref={email} />
+                    placeholder="Email" ref={email} required />
             </div>
             <div className="form-group mb-4">
                 <label className="mb-2 custom-sub-title">Message</label>
                 <textarea className="form-control bg-transparent border-muted py-2 text-light" id="exampleFormControlTextarea1"
-                    placeholder="Type Message here.." rows="4" ref={message}></textarea>
+                    placeholder="Type Message here.." rows="4" ref={message} required></textarea>
             </div>
             {
                 show ?
@@ -66,8 +66,7 @@ const ContactForm = (props) => {
 
                     </div>
                     :
-
-                    <button onClick={formSubmission} type="submit" className="me-2 btn btn-danger px-3 py-2" disabled>Submit</button>
+                    <button type="submit" className="me-2 btn btn-danger px-3 py-2" >Submit</button>
             }
             <span className={`badge ${successMsg === 'sent' ? "text-bg-success" : "text-bg-danger"} p-1 ${(successMsg !== '') ? "" : "fade"}`}>{successMsg}</span>
 
