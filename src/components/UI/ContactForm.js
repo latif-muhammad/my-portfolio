@@ -12,7 +12,7 @@ const ContactForm = (props) => {
 
     const serviceID = config.smtp.serviceID;
     const templateId = config.smtp.templateId;
-    const publicKey = '7cWJ8cHPrNz_27aNZ';
+    const publicKey = config.smtp.publicKey;
 
     //USE YOUR KEYS HERE
     //CREATE ACCOUNT AT EMAILJS
