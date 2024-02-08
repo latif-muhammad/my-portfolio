@@ -5,10 +5,21 @@ import ContactForm from "../components/UI/ContactForm";
 import SocialButton from "../components/core/SocialButton";
 import ProjectsCard from "../components/core/ProjectsCard"
 import SkillCard from '../components/core/SkillCard';
+import CV from '../assets/MuhammadLatif_resume.pdf'
 
 const HomeScreen = () => {
     const githubAcc = () => {
         return window.location.href = 'https://github.com/latif-muhammad';
+    }
+
+    const handleDownloadCv = () => {
+        const pdfUrl = CV;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "MuhammadLatif_resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
     return (
         <>
@@ -43,7 +54,7 @@ const HomeScreen = () => {
                             <p className="mb-5">Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
 
                             <div className="flex">
-                                <button onClick={githubAcc} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
+                                <button onClick={handleDownloadCv} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
                                 <button onClick={githubAcc} className="btn btn-danger px-3 py-2">View More</button>
                             </div>
                         </div>
@@ -52,7 +63,7 @@ const HomeScreen = () => {
             </section>
 
 
-        {/* Timeline */}
+            {/* Timeline */}
 
             <section id="Timeline" className="section-margin timelineSection bg-light section-top-padding">
                 <div className="container section-margin position-relative">
@@ -75,7 +86,7 @@ const HomeScreen = () => {
                     <div className="row">
                         {
                             data.skills.map((skill) => (
-                                <div key = {skill.id}  className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
+                                <div key={skill.id} className="col-lg-3 col-md-4 col-sm-6 col-12 mt-4 pt-2">
                                     <SkillCard icon={skill.icon} >{skill.name}</SkillCard>
                                 </div>
                             ))
