@@ -30,14 +30,14 @@ const ContactForm = (props) => {
         emailjs.send(serviceID, templateId, data, publicKey).then(function (response) {
             if (response.status === 200) {
                 setShow(false);
-                setSuccessMsg("sent");
+                setSuccessMsg("fa-check-circle");
                 email.current.value = "";
                 name.current.value = "";
                 message.current.value = "";
             }
         }, function (err) {
             setShow(false);
-            setSuccessMsg("failed");
+            setSuccessMsg("fa-times-circle");
         });
     }
 
@@ -68,7 +68,10 @@ const ContactForm = (props) => {
                     :
                     <button type="submit" className="me-2 btn btn-danger px-3 py-2" >Submit</button>
             }
-            <span className={`badge ${successMsg === 'sent' ? "text-bg-success" : "text-bg-danger"} p-1 ${(successMsg !== '') ? "" : "fade"}`}>{successMsg}</span>
+
+            <span className={`p-1 ${(successMsg !== '') ? "" : "fade"}`}>
+                <i className={` ${successMsg === "fa-times-circle" ? "text-danger" : "text-success"} fs-3 fa ${successMsg}`}></i>
+            </span>
 
         </form>
     )
