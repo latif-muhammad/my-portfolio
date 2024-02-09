@@ -10,6 +10,7 @@ Welcome to my portfolio website! This website showcases my skills, projects, and
 - Skills section to highlight my technical skills and expertise.
 - Experience section to showcase my work experience and education history.
 - Contact section to provide visitors with a way to get in touch with me.
+- SMTP server support implemented for sending direct messages via Form.
 
 ## Technologies Used
    [![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js,react)](https://skillicons.dev)
