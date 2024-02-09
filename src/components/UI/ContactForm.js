@@ -42,7 +42,7 @@ const ContactForm = (props) => {
     }
 
     return (
-        <form onSubmit={formSubmission} novalidate>
+        <form onSubmit={formSubmission} noValidate>
             <div className="form-group mb-4">
                 <label className="mb-2 custom-sub-title">Name</label>
                 <input type="name" className="form-control bg-transparent border-muted py-2 text-light" id="contact-name"
