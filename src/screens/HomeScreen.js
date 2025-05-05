@@ -135,14 +135,14 @@ const HomeScreen = () => {
                                     <i className="fa fa-map-marker align-bottom fs-3 me-4"></i>
                                     <span>
                                         <h5>Email</h5>
-                                        <a href="mailto:m.latif.25120@khi.iba.edu.pk" className="mb-3 text-light">m.latif.25120@khi.iba.edu.pk</a>
+                                        <a href="mailto:m.latif.25120@khi.iba.edu.pk" className="mb-3 text-light">muhammadlatifadd199@gmail.com</a>
                                     </span>
                                 </div>
                                 <div className="address d-flex">
                                     <i className="fa fa-phone align-bottom fs-3 me-4"></i>
                                     <span>
                                         <h5>Phone Number</h5>
-                                        <p>+923169306176</p>
+                                        <p>+9204900000001</p>
                                     </span>
                                 </div>
 
