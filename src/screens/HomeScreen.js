@@ -5,22 +5,22 @@ import ContactForm from "../components/UI/ContactForm";
 import SocialButton from "../components/core/SocialButton";
 import ProjectsCard from "../components/core/ProjectsCard"
 import SkillCard from '../components/core/SkillCard';
-import CV from '../assets/MuhammadLatif_resume.pdf'
 
 const HomeScreen = () => {
     const githubAcc = () => {
         return window.location.href = 'https://github.com/latif-muhammad';
     }
 
-    const handleDownloadCv = () => {
-        const pdfUrl = CV;
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "MuhammadLatif_resume.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    }
+    // const handleDownloadCv = () => {
+    // //     const pdfUrl = CV;
+    // //     const link = document.createElement("a");
+    // //     link.href = pdfUrl;
+    // //     document.body.appendChild(link);
+    // //     link.click();
+    // //     document.body.removeChild(link);
+    // // <button onClick={handleDownloadCv} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
+
+    // }
     return (
         <>
             <section className={`section-margin header bg-light`}>
@@ -54,7 +54,6 @@ const HomeScreen = () => {
                             <p className="mb-5">Hello! Iam Muhammad Latif, Currently a student at IBA Karachi and passionate about exploring the fascinating world of AI and development. With expertise in Flutter, React, React Native, and Python, I enjoy building innovative solutions and pushing the boundaries of technology. Let's explore my creative journey together!</p>
 
                             <div className="flex">
-                                <button onClick={handleDownloadCv} className="btn btn-outline-danger px-3 py-2 me-3">Download CV</button>
                                 <button onClick={githubAcc} className="btn btn-danger px-3 py-2">View More</button>
                             </div>
                         </div>
